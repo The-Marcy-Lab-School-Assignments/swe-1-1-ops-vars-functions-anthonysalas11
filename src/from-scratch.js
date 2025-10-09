@@ -1,36 +1,66 @@
 // Basic Variable & Expression Functions
 const calculateArea = (width, height) => {
   // TODO: Calculate and return the area of a rectangle
+  return width * height
 };
+console.log(calculateArea(5, 3))
 
 const isEven = (number) => {
   // TODO: Return true if the number is even, false if odd
+  if (number % 2 === 0) {
+    return true
+  } else {
+    return false
+  }
+
+
+
 };
+console.log(isEven(5))
+
 
 const convertToFahrenheit = (celsius) => {
   // TODO: Convert celsius to fahrenheit using the formula: (celsius * 9/5) + 32
+  return celsius * 9 / 5 + 32
 };
 
 // String & Variable Functions
 const createGreeting = (name) => {
   // TODO: Return a greeting string like "Hello, [name]!"
+  return `Hello, ${name}!`
 };
 
 const getInitials = (firstName, lastName) => {
   // TODO: Return initials by taking first letter of each name
+  return firstName[0] += lastName[0]
 };
 
 const formatPrice = (price) => {
   // TODO: Return price formatted as "$[price].00" (e.g., "$5.00")
+  return `$${price}.00`
 };
+formatPrice(9)
 
 // Function Logic Functions
 const getLarger = (num1, num2) => {
   // TODO: Return the larger of the two numbers
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
 };
+getLarger(5, 8)
 
 const isValidAge = (age) => {
   // TODO: Return true if age is between 0 and 120, false otherwise
+  if (age >= 0 && age <= 120) {
+    return true
+  }
+  else {
+    return false
+  }
+
 };
 
 module.exports = {
