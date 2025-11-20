@@ -3,7 +3,7 @@ const debugFunc = () => {
   let name = 'Zo';
   let mood = 'happy';
 
-  console.log('Hello ' + name + ", are you feeling " + mood + ' ' + time + '?');
+  console.log(`Hello ${name} , are you feeling ${mood} ${time}  ?`);
 
 
   mood = 'sad'
